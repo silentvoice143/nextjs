@@ -34,7 +34,7 @@ npx create-next-app@latest
 
   `Route: http://localhost:3000/users/new`
 
--**Dynamic route :** A Dynamic Segment can be created by wrapping a file or folder name in square brackets: [segmentName]. For example, [id] or [slug].
+- **Dynamic route :** A Dynamic Segment can be created by wrapping a file or folder name in square brackets: [segmentName]. For example, [id] or [slug].
 
 Dynamic Segments can be accessed from useRouter.
 
