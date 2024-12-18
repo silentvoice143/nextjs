@@ -34,6 +34,21 @@ npx create-next-app@latest
 
   `Route: http://localhost:3000/users/new`
 
+-**Dynamic route :** A Dynamic Segment can be created by wrapping a file or folder name in square brackets: [segmentName]. For example, [id] or [slug].
+
+Dynamic Segments can be accessed from useRouter.
+
+For example, a blog could include the following route pages/blog/[slug].js where [slug] is the Dynamic Segment for blog posts.
+
+```
+import { useRouter } from 'next/router'
+ 
+export default function Page() {
+  const router = useRouter()
+  return <p>Post: {router.query.slug}</p>
+}
+```
+
 - Defining navigation
 
   `<Link href={"/users"}>Users</Link>`
